@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+body {
+  background-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  height: 100px;
+  margin-left: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.name-section {
   color: white;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 25px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.movies-list {
+  display: flex;
+  overflow: scroll;
+  flex-wrap: nowrap;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movies-list::-webkit-scrollbar {
+  display: none;
+}
+
+.movies-list img {
+  flex-shrink: 0;
+  width: 220px;
+  height: 123.86px;
+}
+
+.category {
+  margin: 0 0 40px 50px;
 }
