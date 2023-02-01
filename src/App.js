@@ -5,8 +5,10 @@ import Section from "./components/Section";
 
 function App() {
   return (
-    <>
-      <Logo />
+    <div className="App">
+      <header>
+        <Logo />
+      </header>
       {movies.map((section) => {
         return (
           <Section
@@ -16,7 +18,7 @@ function App() {
           />
         );
       })}
-    </>
+    </div>
   );
 }
 
